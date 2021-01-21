@@ -29,7 +29,7 @@ serde_json = { version = "1.0", features = ["alloc"], default-features = false, 
 serde_yaml = { version = "0.8", optional = true }
 
 [dev-dependencies]
-btree_graph = { path = "../btree_graph" }
+btree_graph = "0.2"
 criterion = "0.3.3"
 
 [[bench]]
