@@ -1,49 +1,46 @@
-# Binary Tree Network (btree_network)
+# Try<Encoding>For (try_encoding_for)
 
-[![Build Status](https://travis-ci.com/jameone/btree_network.svg?branch=main)](https://travis-ci.com/jameone/btree_network)
-[![Code Version](https://img.shields.io/crates/v/btree_network)](https://img.shields.io/crates/v/btree_network)
+[![Build Status](https://travis-ci.com/jameone/try_encoding_for.svg?branch=main)](https://travis-ci.com/jameone/try_encoding_for)
+[![Code Version](https://img.shields.io/crates/v/try_encoding_for)](https://img.shields.io/crates/v/try_encoding_for)
 [![Docs badge]][docs.rs]
 
 [Docs badge]: https://img.shields.io/badge/docs.rs-rustdoc-green
-[docs.rs]: https://docs.rs/btree_network/
+[docs.rs]: https://docs.rs/try_encoding_for/
 
-This library is a minimal implementation of a network 
-(abstract data structure) by way of a single binary tree map
-(`BTreeMap`). This implementation is often referred to as
-an adjacency list.
+This library contains a convenient API wrapper for `serde_json`,
+`serde_yaml`, and `serde_cbor` miming.
 
-The primary goals of this implementation are to be 
-minimal and idiomatic to the Rust language. The `alloc`
-crate is the only dependency when compiled with default
-features and is not optional. As one might assume, `alloc`
-is required for reason the implementation relies on `BTreeMap`
-(and the `BTreeSet` wrapper).
-
-Secondary concerns include serialization,
-deserialization, and encoding. For these the `serde`,
-`serde_json`, `serde_yaml`, and `serde_cbor` crates
+The `serde`, `serde_json`, `serde_yaml`, and `serde_cbor` crates
 are included and available under the feature flags:
-`serde`, `serde_json`, `serde_yaml`, and `serde_cbor`.
-Please see the encoding module's [API](../try_encoding_from/src/encoding/api.rs)
+`json`, `yaml`, and `cbor`.
+Please see the encoding module's [API](./src/encoding/api.rs)
 for the available optional trait definitions. *Note: using
-`serde_json`, `serde_yaml`, or `serde_cbor` features will
-require inclusion of the `serde` feature, else the library
-will not compile.*
+`json`, `yaml`, or `cbor` features will
+require inclusion of the `serde` crate as Serialize, Deserialize,
+DeserializeOwned traits are required for the library to compile.*
 
 ## Example
 ```rust
-use btree_network::BTreeNetwork;
+use try_encoding_for::TryJsonFrom;
+use btree_graph::{BTreeGraph, AddVertex, AddEdge, Vertices};
 
 fn main() {
-    let mut network: BTreeNetwork<String, String> = BTreeNetwork::new();
-    // Add nodes.
-    network.add_vertex(String::from("Tarzan"));
-    network.add_vertex(String::from("Jane"));
-    // Add a relationship.
-    network.add_edge(String::from("Tarzan"), String::from("Jane"));
-    
-    // Assert relationship now exists.
-    assert!(network.adjacdent(String::from("Tarzan"), String::from("Jane")));
+    // Add three nodes.
+    let mut graph: BTreeGraph<usize, usize> = BTreeGraph::new();
+    graph.add_vertex(0);
+    graph.add_vertex(1);
+    graph.add_vertex(2);
+
+    // Check there is indeed three nodes.
+    assert_eq!(graph.vertices().len(), 3);
+
+    // Add an edge (0, 1) = 2, (1, 2) = 3, and (0, 2) = 4.
+    graph.add_edge(0, 1, 2).unwrap();
+    graph.add_edge(1, 2, 3).unwrap();
+    graph.add_edge(0, 2, 4).unwrap();
+
+    let json_string: String = String::try_json_from(graph)?;
+    assert_eq!(json_string, String::from("{\"vertices\":{\"0\":[2,4],\"1\":[3],\"2\":[]},\"edges\":{\"2\":[0,1],\"3\":[1,2],\"4\":[0,2]}}"));
 }
 ```
 

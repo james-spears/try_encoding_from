@@ -3,6 +3,13 @@ name = "try_encoding_from"
 version = "0.1.0"
 authors = ["James Spears <james.w.spears@gmail.com>"]
 edition = "2018"
+autotests = false
+license = "MIT OR Apache-2.0"
+description = "A convenient API for serde_json, serde_yaml, serde_cbor. Meme of the TryFrom and TryInto traits."
+homepage = "https://github.com/jameone/try_encoding_from"
+repository = "https://github.com/jameone/try_encoding_from"
+keywords = ["encoding", "JSON", "YAML", "CBOR"]
+categories = ["encoding", "abstraction", "no-std"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

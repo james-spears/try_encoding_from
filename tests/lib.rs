@@ -31,9 +31,8 @@ fn test_json_encoding() -> Result<(), Error> {
     graph.add_edge(1, 2, 3).unwrap();
     graph.add_edge(0, 2, 4).unwrap();
 
-    let exp_json_string: String = String::from("{\"vertices\":{\"0\":[2,4],\"1\":[3],\"2\":[]},\"edges\":{\"2\":[0,1],\"3\":[1,2],\"4\":[0,2]}}");
     let json_string: String = String::try_json_from(graph.clone())?;
-    assert_eq!(exp_json_string, json_string);
+    assert_eq!(json_string, String::from("{\"vertices\":{\"0\":[2,4],\"1\":[3],\"2\":[]},\"edges\":{\"2\":[0,1],\"3\":[1,2],\"4\":[0,2]}}"));
 
     let decoded_graph: BTreeGraph<usize, usize> = json_string.try_json_into()?;
     assert_eq!(decoded_graph, graph.clone());
