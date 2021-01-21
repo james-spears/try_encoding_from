@@ -8,7 +8,8 @@
 [docs.rs]: https://docs.rs/try_encoding_from/
 
 This library contains a convenient API wrapper for `serde_json`,
-`serde_yaml`, and `serde_cbor` miming.
+`serde_yaml`, and `serde_cbor` inspired by the `TryFrom` and
+`TryInto` traits.
 
 The `serde`, `serde_json`, `serde_yaml`, and `serde_cbor` crates
 are included and available under the feature flags:
