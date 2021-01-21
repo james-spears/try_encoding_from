@@ -1,10 +1,13 @@
 # Try\<Encoding\>From  (try_encoding_from)
 
-[![Build Status](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiSno5eWZOM0RtRkdabjJ2eG03dnQ3UzEvVTFIMGlPbklsajc0cHRiK3NCZXdpaXNxc09pdHhlK3Rta0FvTEsvdkgxcmZubTdUZ2dSMDM1THlhOG1oQlYwPSIsIml2UGFyYW1ldGVyU3BlYyI6IjNjVXFQdTJvamgxUUozMUciLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main)](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiSno5eWZOM0RtRkdabjJ2eG03dnQ3UzEvVTFIMGlPbklsajc0cHRiK3NCZXdpaXNxc09pdHhlK3Rta0FvTEsvdkgxcmZubTdUZ2dSMDM1THlhOG1oQlYwPSIsIml2UGFyYW1ldGVyU3BlYyI6IjNjVXFQdTJvamgxUUozMUciLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main)
-[![Code Version](https://img.shields.io/crates/v/try_encoding_from)](https://img.shields.io/crates/v/try_encoding_from)
+[![CodeBuild]][CodeBuild]
+[![Version badge]][crates.io]
 [![Docs badge]][docs.rs]
 
-[Docs badge]: https://img.shields.io/badge/docs.rs-rustdoc-green
+[CodeBuild]: https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiSno5eWZOM0RtRkdabjJ2eG03dnQ3UzEvVTFIMGlPbklsajc0cHRiK3NCZXdpaXNxc09pdHhlK3Rta0FvTEsvdkgxcmZubTdUZ2dSMDM1THlhOG1oQlYwPSIsIml2UGFyYW1ldGVyU3BlYyI6IjNjVXFQdTJvamgxUUozMUciLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main
+[Version badge]: https://img.shields.io/crates/v/try_encoding_from
+[crates.io]: https://crates.io/crates/try_encoding_from
+[Docs badge]: https://img.shields.io/badge/docs.rs-rustdoc-blue
 [docs.rs]: https://docs.rs/try_encoding_from/
 
 This library contains a convenient API wrapper for `serde_json`,
