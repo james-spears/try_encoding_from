@@ -1,11 +1,11 @@
-# Try<Encoding>For (try_encoding_for)
+# Try\<Encoding\>From  (try_encoding_from)
 
-[![Build Status](https://travis-ci.com/jameone/try_encoding_for.svg?branch=main)](https://travis-ci.com/jameone/try_encoding_for)
-[![Code Version](https://img.shields.io/crates/v/try_encoding_for)](https://img.shields.io/crates/v/try_encoding_for)
+[![Build Status](https://travis-ci.com/jameone/try_encoding_from.svg?branch=main)](https://travis-ci.com/jameone/try_encoding_from)
+[![Code Version](https://img.shields.io/crates/v/try_encoding_from)](https://img.shields.io/crates/v/try_encoding_from)
 [![Docs badge]][docs.rs]
 
 [Docs badge]: https://img.shields.io/badge/docs.rs-rustdoc-green
-[docs.rs]: https://docs.rs/try_encoding_for/
+[docs.rs]: https://docs.rs/try_encoding_from/
 
 This library contains a convenient API wrapper for `serde_json`,
 `serde_yaml`, and `serde_cbor` miming.
@@ -21,7 +21,7 @@ DeserializeOwned traits are required for the library to compile.*
 
 ## Example
 ```rust
-use try_encoding_for::TryJsonFrom;
+use try_encoding_from::TryJsonFrom;
 use btree_graph::{BTreeGraph, AddVertex, AddEdge, Vertices};
 
 fn main() {
