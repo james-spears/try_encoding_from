@@ -1,0 +1,31 @@
+[package]
+name = "try_encoding_from"
+version = "0.1.0"
+authors = ["James Spears <james.w.spears@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[test]]
+name = "integration"
+path = "tests/lib.rs"
+
+[features]
+cbor = ["serde", "serde_cbor"]
+json = ["serde", "serde_json"]
+yaml = ["serde", "serde_yaml"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"], default-features = false, optional = true }
+serde_cbor = { version = "0.11", features = ["alloc"], default-features = false, optional = true }
+serde_json = { version = "1.0", features = ["alloc"], default-features = false, optional = true }
+serde_yaml = { version = "0.8", optional = true }
+
+[dev-dependencies]
+btree_graph = { path = "../btree_graph" }
+criterion = "0.3.3"
+
+[[bench]]
+name = "benchmark"
+path = "benches/lib.rs"
+harness = false
