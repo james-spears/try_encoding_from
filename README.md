@@ -53,7 +53,7 @@ fn main() {
 Add the following to your `Cargo.toml` file:
 ```toml
 [dependencies]
-try_encoding_from = "0.1.2"
+try_encoding_from = "0.1.3"
 ```
 
 ## API
