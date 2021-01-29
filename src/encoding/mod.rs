@@ -1,5 +1,5 @@
 #[cfg(any(feature = "serde_json", feature = "serde_yaml", feature = "serde_cbor"))]
-use crate::error::Error;
+use crate::Error;
 #[cfg(any(feature = "serde_json", feature = "serde_yaml"))]
 use alloc::string::String;
 #[cfg(any(feature = "serde_json", feature = "serde_yaml", feature = "serde_cbor"))]
