@@ -4,7 +4,7 @@
 [![Version badge]][crates.io]
 [![Docs badge]][docs.rs]
 
-[CodeBuild]: https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiSno5eWZOM0RtRkdabjJ2eG03dnQ3UzEvVTFIMGlPbklsajc0cHRiK3NCZXdpaXNxc09pdHhlK3Rta0FvTEsvdkgxcmZubTdUZ2dSMDM1THlhOG1oQlYwPSIsIml2UGFyYW1ldGVyU3BlYyI6IjNjVXFQdTJvamgxUUozMUciLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main
+[CodeBuild]: https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiV1VGcDVGZUZYTnM4bldvK2xQOVZxL1JFWm10Y3I3MmNNRmtGSjJHa1Z6aFE3djh4VVdXRlNoa2ROYUdMOU5WZzl6Q0RhaUhDSDR5VkhGTnNsMkdGNG9ZPSIsIml2UGFyYW1ldGVyU3BlYyI6IlRaVlI1ZHVUVVVwUjFNZ1kiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main
 [Version badge]: https://img.shields.io/crates/v/try_encoding_from
 [crates.io]: https://crates.io/crates/try_encoding_from
 [Docs badge]: https://img.shields.io/badge/docs.rs-rustdoc-blue
