@@ -4,7 +4,7 @@
 
 | dev                                   | test                                 | main                      |
 | :-----------------------------------: | :----------------------------------: | :-----------------------: |
-| [![CodeBuild(test)]][CodeBuild(test)] |[![CodeBuild(test)]][CodeBuild(test)] | [![CodeBuild]][CodeBuild] |
+| [![CodeBuild(dev)]][CodeBuild(dev)]   |[![CodeBuild(test)]][CodeBuild(test)] | [![CodeBuild]][CodeBuild] |
 
 [![Version badge]][crates.io]
 [![Docs badge]][docs.rs]
