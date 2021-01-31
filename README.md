@@ -2,16 +2,16 @@
 
 ## Branch Status
 
-| dev                 | test               | main         |
+| build                 | test               | main         |
 | :-----------------: | :----------------: | :----------: |
-| ![CodeBuild(dev)]   | ![CodeBuild(test)] | ![CodeBuild] |
+| ![CodeBuild(build)]   | ![CodeBuild(test)] | ![CodeBuild] |
 
 [![Version badge]][crates.io]
 [![Docs badge]][docs.rs]
 
 [CodeBuild]: https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiV1VGcDVGZUZYTnM4bldvK2xQOVZxL1JFWm10Y3I3MmNNRmtGSjJHa1Z6aFE3djh4VVdXRlNoa2ROYUdMOU5WZzl6Q0RhaUhDSDR5VkhGTnNsMkdGNG9ZPSIsIml2UGFyYW1ldGVyU3BlYyI6IlRaVlI1ZHVUVVVwUjFNZ1kiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main
 [CodeBuild(test)]: https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiTnhqdFFTcDZRTlBzTWdWNDBCL1dQWms4R1RINHlDNWRSOUtOQjJXVGlzYlBaWGdGdlJTcGZVNkE0RHQ5aXNXTzlLdC9oTHZuak9rb3pmL1IzSzA0Zi9nPSIsIml2UGFyYW1ldGVyU3BlYyI6IllEMWJpOURueWNta0lScnoiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=test
-[CodeBuild(dev)]: https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiVEFxdFdWcHh3R01XTUxhd1ErL2tTRUlDM0E3VktGRnlRblJ3Y3dyUzVnRkU3OUVmZkxxcldtU3dyU3hjcnlpM1FBdlUrVDZFeWdKd2ZGYTJMK0JJanJJPSIsIml2UGFyYW1ldGVyU3BlYyI6IkhVMHFnUWVXU1NzOEJySi8iLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=dev
+[CodeBuild(build)]: https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiVEFxdFdWcHh3R01XTUxhd1ErL2tTRUlDM0E3VktGRnlRblJ3Y3dyUzVnRkU3OUVmZkxxcldtU3dyU3hjcnlpM1FBdlUrVDZFeWdKd2ZGYTJMK0JJanJJPSIsIml2UGFyYW1ldGVyU3BlYyI6IkhVMHFnUWVXU1NzOEJySi8iLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=build
 [Version badge]: https://img.shields.io/crates/v/try_encoding_from
 [crates.io]: https://crates.io/crates/try_encoding_from
 [Docs badge]: https://img.shields.io/badge/docs.rs-rustdoc-blue
