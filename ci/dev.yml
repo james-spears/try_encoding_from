@@ -1,5 +1,7 @@
 version: 0.2
-
+env:
+  variables:
+    CODEBUILD_LOG_PATH: "test"
 phases:
   pre_build:
     commands:
@@ -12,4 +14,3 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - export CODEBUILD_LOG_PATH=test
