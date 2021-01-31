@@ -12,3 +12,4 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
+      - cat $CODEBUILD_LOG_PATH
