@@ -1,6 +1,6 @@
 # Try\<Encoding\>From  (try_encoding_from)
 
-[![CodeBuild]][CodeBuild]
+![CodeBuild]
 [![Version badge]][crates.io]
 [![Docs badge]][docs.rs]
 

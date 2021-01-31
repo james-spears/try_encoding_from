@@ -2,9 +2,9 @@
 
 ## Branch Status
 
-| dev                                   | test                                 | main                      |
-| :-----------------------------------: | :----------------------------------: | :-----------------------: |
-| [![CodeBuild(dev)]][CodeBuild(dev)]   |[![CodeBuild(test)]][CodeBuild(test)] | [![CodeBuild]][CodeBuild] |
+| dev                 | test               | main         |
+| :-----------------: | :----------------: | :----------: |
+| ![CodeBuild(dev)]   | ![CodeBuild(test)] | ![CodeBuild] |
 
 [![Version badge]][crates.io]
 [![Docs badge]][docs.rs]
