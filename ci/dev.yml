@@ -1,11 +1,8 @@
 version: 0.2
-env:
-  variables:
-    CODEBUILD_LOG_PATH: "test"
+
 phases:
   pre_build:
     commands:
-      - cd $CODEBUILD_SRC_DIR
       - rustup default stable
   build:
     commands:
