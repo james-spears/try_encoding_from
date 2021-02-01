@@ -4,7 +4,6 @@ phases:
   pre_build:
     commands:
       - rustup default stable
-      - echo $CODEBUILD_SOURCE_VERSION
   build:
     commands:
       - echo Test coverage started on `date`
