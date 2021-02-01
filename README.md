@@ -2,14 +2,14 @@
 
 ## Branch Status
 
-| build                 | test               | main         |
-| :-----------------: | :----------------: | :----------: |
-| ![CodeBuild(build)]   | ![CodeBuild(test)] | ![CodeBuild] |
+| build                 | test               | main               |
+| :-------------------: | :----------------: | :----------------: |
+| ![CodeBuild(build)]   | ![CodeBuild(test)] | ![CodeBuild(main)] |
 
 [![Version badge]][crates.io]
 [![Docs badge]][docs.rs]
 
-[CodeBuild]: https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiV1VGcDVGZUZYTnM4bldvK2xQOVZxL1JFWm10Y3I3MmNNRmtGSjJHa1Z6aFE3djh4VVdXRlNoa2ROYUdMOU5WZzl6Q0RhaUhDSDR5VkhGTnNsMkdGNG9ZPSIsIml2UGFyYW1ldGVyU3BlYyI6IlRaVlI1ZHVUVVVwUjFNZ1kiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main
+[CodeBuild(main)]: https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiV1VGcDVGZUZYTnM4bldvK2xQOVZxL1JFWm10Y3I3MmNNRmtGSjJHa1Z6aFE3djh4VVdXRlNoa2ROYUdMOU5WZzl6Q0RhaUhDSDR5VkhGTnNsMkdGNG9ZPSIsIml2UGFyYW1ldGVyU3BlYyI6IlRaVlI1ZHVUVVVwUjFNZ1kiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main
 [CodeBuild(test)]: https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiTnhqdFFTcDZRTlBzTWdWNDBCL1dQWms4R1RINHlDNWRSOUtOQjJXVGlzYlBaWGdGdlJTcGZVNkE0RHQ5aXNXTzlLdC9oTHZuak9rb3pmL1IzSzA0Zi9nPSIsIml2UGFyYW1ldGVyU3BlYyI6IllEMWJpOURueWNta0lScnoiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=test
 [CodeBuild(build)]: https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiYU5hdUlNVGVRaURyOEk1THhaOXM5eUZjMW8wK3N0cGpqTHZRSEZxNXdlQjVDMGNDNFE3eExEZ1YvcUxmcHdoM1cwNjZha3lQV1k4Y2Mxamp5T3RydmJFPSIsIml2UGFyYW1ldGVyU3BlYyI6InA5cGpmTzNDMVhPV0wwR1IiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=build
 [Version badge]: https://img.shields.io/crates/v/try_encoding_from
