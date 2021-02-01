@@ -15,7 +15,3 @@ phases:
   post_build:
     commands:
       - echo Packaging completed on `date`
-artifacts:
-  files:
-    - cov/**/*
-  base-directory: ./target
